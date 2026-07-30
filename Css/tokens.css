@@ -1,0 +1,75 @@
+/* ============================================================
+   PANCHTATVA OS — DESIGN TOKENS
+   Forest / Leaf / Gold / Cream — Apple x National Geographic x Notion x Forest
+   ============================================================ */
+:root {
+  /* Color */
+  --forest-900: #0B3D24;
+  --forest-800: #0F4A2C;
+  --forest-700: #145C36;
+  --forest-600: #1B7043;
+  --leaf-500: #3F9142;
+  --leaf-400: #5CA85E;
+  --leaf-300: #7BC17E;
+  --leaf-200: #A9DBA9;
+  --gold-600: #A9873B;
+  --gold-500: #C6A94E;
+  --gold-400: #D8BE6E;
+  --gold-300: #E4D093;
+  --gold-200: #F0E4C2;
+  --cream-100: #FBF8F1;
+  --cream-200: #F5F0E4;
+  --white: #FFFFFF;
+  --grey-900: #1E2320;
+  --grey-700: #3B433D;
+  --grey-500: #6B756F;
+  --grey-300: #A8B0AA;
+  --grey-100: #E6E9E5;
+
+  /* Leaf accent hues, seeded from the logo's multicolor canopy — used sparingly for tags/icons only */
+  --accent-blue: #4C7FA6;
+  --accent-purple: #7A6BA6;
+  --accent-orange: #C97A4A;
+
+  /* Typography */
+  --font-display: "Fraunces", "Source Serif 4", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Spacing (8px base grid) */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 16px;
+  --sp-4: 24px;
+  --sp-5: 32px;
+  --sp-6: 48px;
+  --sp-7: 64px;
+  --sp-8: 96px;
+  --sp-9: 128px;
+
+  /* Radius */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-full: 999px;
+
+  /* Shadow */
+  --shadow-sm: 0 2px 8px rgba(11, 61, 36, 0.06);
+  --shadow-md: 0 8px 24px rgba(11, 61, 36, 0.10);
+  --shadow-lg: 0 20px 48px rgba(11, 61, 36, 0.16);
+
+  /* Motion */
+  --ease-organic: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 180ms;
+  --dur-med: 420ms;
+  --dur-slow: 900ms;
+
+  /* Layout */
+  --content-max: 1280px;
+  --content-narrow: 760px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Reserved for future dark mode; v1 ships light-only per brief (premium/nature/calm) */
+  }
+}

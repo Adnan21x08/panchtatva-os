@@ -1,0 +1,94 @@
+/* ============================================================
+   PAGE-SPECIFIC LAYOUTS
+   ============================================================ */
+
+/* --- What is Panchtatva band --- */
+.what-is-grid { display: grid; gap: var(--sp-6); grid-template-columns: 1fr; align-items: center; }
+@media (min-width: 900px) { .what-is-grid { grid-template-columns: 1.1fr 0.9fr; } }
+.stat-strip-wrap { background: var(--forest-900); border-radius: var(--radius-lg); padding: var(--sp-5); }
+.stat-strip-wrap .stat-strip { justify-content: space-between; }
+
+/* --- Assistant teaser (home) --- */
+.assistant-teaser { max-width: 640px; }
+.assistant-teaser p { color: var(--leaf-200); }
+
+/* --- Recruitment panel --- */
+.recruitment-panel {
+  background: linear-gradient(135deg, var(--gold-200), var(--cream-200));
+  border-radius: var(--radius-lg);
+  padding: var(--sp-7) var(--sp-5);
+  border: 1px solid var(--gold-300);
+}
+.recruitment-panel h2 { color: var(--forest-900); }
+
+/* --- Page hero (interior pages) --- */
+.page-hero {
+  background: linear-gradient(160deg, var(--forest-900), var(--forest-700));
+  color: var(--cream-100);
+  padding: var(--sp-7) 0 var(--sp-6);
+}
+.page-hero .eyebrow { color: var(--gold-300); }
+.page-hero h1 { color: var(--cream-100); margin-bottom: var(--sp-2); }
+.page-hero p { color: var(--leaf-200); max-width: 620px; }
+
+/* --- Journey page --- */
+.filter-bar { top: 64px; }
+
+/* --- Event page --- */
+.event-hero-media { aspect-ratio: 16/8; border-radius: var(--radius-lg); overflow: hidden; margin-top: var(--sp-5); }
+.event-meta-row { display: flex; flex-wrap: wrap; gap: 10px; margin: var(--sp-3) 0; }
+.event-body-grid { display: grid; gap: var(--sp-6); grid-template-columns: 1fr; margin-top: var(--sp-6); }
+@media (min-width: 940px) { .event-body-grid { grid-template-columns: 2fr 1fr; } }
+.event-block { margin-bottom: var(--sp-6); }
+.event-block h3 { display: flex; align-items: center; gap: 10px; }
+.event-block h3 svg { width: 20px; height: 20px; color: var(--gold-600); }
+.impact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px,1fr)); gap: var(--sp-3); }
+.impact-item { background: var(--white); border-radius: var(--radius-md); padding: var(--sp-3); text-align: center; box-shadow: var(--shadow-sm); }
+.impact-item .num { font-family: var(--font-display); font-size: 1.6rem; color: var(--forest-800); }
+.impact-item .lbl { font-size: 0.78rem; color: var(--grey-500); }
+.sidebar-card { background: var(--white); border-radius: var(--radius-md); padding: var(--sp-4); box-shadow: var(--shadow-sm); margin-bottom: var(--sp-4); }
+.sidebar-card h4 { margin-bottom: 10px; font-size: 0.95rem; }
+.sidebar-list li { padding: 6px 0; font-size: 0.9rem; color: var(--grey-700); border-bottom: 1px solid var(--grey-100); }
+.sidebar-list li:last-child { border-bottom: none; }
+.confidence-note { font-size: 0.78rem; color: var(--grey-500); background: var(--cream-200); border-radius: var(--radius-sm); padding: 10px 14px; margin-top: var(--sp-3); }
+.share-row { display: flex; gap: 10px; margin-top: var(--sp-6); flex-wrap: wrap; }
+
+/* --- Gallery album --- */
+.media-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); gap: var(--sp-3); }
+.media-tile { aspect-ratio: 1; border-radius: var(--radius-sm); overflow: hidden; cursor: pointer; border: none; padding: 0; }
+
+/* --- Team --- */
+.team-card { background: var(--white); border-radius: var(--radius-md); padding: var(--sp-4); text-align: center; box-shadow: var(--shadow-sm); transition: transform var(--dur-med) var(--ease-organic); }
+.team-card:hover { transform: translateY(-4px); }
+.team-avatar {
+  width: 76px; height: 76px; border-radius: 50%; margin: 0 auto var(--sp-3);
+  background: conic-gradient(from 120deg, var(--forest-700), var(--leaf-400), var(--gold-400), var(--forest-700));
+  display: flex; align-items: center; justify-content: center; color: var(--white); font-family: var(--font-display); font-size: 1.4rem;
+}
+.team-name { font-family: var(--font-display); font-size: 1.05rem; margin-bottom: 2px; }
+.team-role { font-size: 0.82rem; color: var(--gold-600); font-weight: 600; }
+
+/* --- Session tabs --- */
+.session-tabs { display: flex; gap: 10px; margin-bottom: var(--sp-5); justify-content: center; flex-wrap: wrap; }
+
+/* --- About page --- */
+.value-grid { display: grid; gap: var(--sp-4); grid-template-columns: 1fr; }
+@media (min-width: 700px) { .value-grid { grid-template-columns: repeat(2,1fr); } }
+.value-item { background: var(--white); border-radius: var(--radius-md); padding: var(--sp-4); box-shadow: var(--shadow-sm); }
+
+/* --- Assistant full page --- */
+.assistant-page-wrap { max-width: 720px; margin: 0 auto; }
+.assistant-full-panel { background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); height: 60vh; min-height: 460px; display:flex; flex-direction:column; overflow:hidden; }
+.assistant-disclaimer { font-size: 0.82rem; color: var(--grey-500); text-align:center; margin-top: var(--sp-4); }
+
+/* --- Join page --- */
+.join-hero-panel {
+  background: linear-gradient(150deg, var(--forest-900), var(--forest-700) 60%, var(--gold-600));
+  color: var(--cream-100); border-radius: var(--radius-lg); padding: var(--sp-8) var(--sp-5); text-align: center;
+}
+.join-hero-panel .eyebrow { color: var(--gold-300); }
+.join-hero-panel h1 { color: var(--cream-100); }
+.join-hero-panel p { color: var(--leaf-200); max-width: 560px; margin-left:auto; margin-right:auto; }
+
+/* --- Empty state --- */
+.empty-state { text-align: center; padding: var(--sp-8) var(--sp-4); color: var(--grey-500); }
