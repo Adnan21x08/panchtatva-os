@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join Panchtatva — Recruitment Opening Soon</title>
+<meta name="description" content="Recruitment for Panchtatva opens after the Freshers' Orientation. Follow along to be the first to know.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+
+<main id="main">
+  <section class="section" style="padding-top:var(--sp-7);">
+    <div class="container">
+      <div class="join-hero-panel">
+        <p class="eyebrow">How do I become part of it?</p>
+        <h1>Recruitment Opening Soon</h1>
+        <p class="lede">The next generation of eco leaders will be welcomed soon. Recruitment opens after the Freshers' Orientation.</p>
+        <div class="hero-actions" style="justify-content:center;margin-top:var(--sp-5);">
+          <a href="#" data-instagram target="_blank" rel="noopener" class="btn btn-primary">Follow on Instagram</a>
+          <button class="btn btn-secondary" id="notifyBtn">Notify Me</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container-narrow" style="text-align:center;">
+      <div class="section-head center reveal">
+        <p class="eyebrow">While you wait</p>
+        <h2>See what you'd be joining</h2>
+      </div>
+      <div class="hero-actions" style="justify-content:center;">
+        <a href="journey.html" class="btn btn-outline">View the Journey</a>
+        <a href="events.html" class="btn btn-outline">Browse Events</a>
+        <a href="team.html" class="btn btn-outline">Meet the Team</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/icons.js"></script>
+<script src="js/data.js"></script>
+<script src="js/media-manifest.js"></script>
+<script src="js/cloudinary.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/render-helpers.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  mountLayout("join");
+  document.getElementById("notifyBtn").addEventListener("click", () => {
+    alert("Recruitment notifications aren't wired up yet in this v1 preview — this button is a placeholder per the project brief. Follow Instagram for now!");
+  });
+});
+</script>
+<script src="js/assistant.js"></script>
+<script src="js/chat-widget.js"></script>
+</body>
+</html>

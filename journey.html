@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journey — Panchtatva</title>
+<meta name="description" content="An interactive timeline of every documented Panchtatva event — what the society has accomplished, event by event.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">What have you accomplished?</p>
+      <h1>The Panchtatva Journey</h1>
+      <p>Every documented event, from September 2025 to the opening of the 2026–27 session — reconstructed straight from the society's own Instagram archive.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);width:16px;height:16px;"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="search" id="searchInput" placeholder="Search events..." aria-label="Search events">
+        </div>
+      </div>
+      <div id="yearChips" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;"></div>
+      <div id="catChips" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:var(--sp-3);"></div>
+      <p id="resultCount" style="font-size:0.85rem;color:var(--grey-500);margin-bottom:var(--sp-5);"></p>
+
+      <div class="timeline" id="timelineWrap"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/icons.js"></script>
+<script src="js/data.js"></script>
+<script src="js/media-manifest.js"></script>
+<script src="js/cloudinary.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/render-helpers.js"></script>
+<script src="js/main.js"></script>
+<script src="js/journey.js"></script>
+<script src="js/assistant.js"></script>
+<script src="js/chat-widget.js"></script>
+</body>
+</html>
